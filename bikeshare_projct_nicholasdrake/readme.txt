@@ -5,3 +5,6 @@ References:
 -udacity
 -stackoverflow
 -python documentation
+
+Author:
+-Nicholas Drake
