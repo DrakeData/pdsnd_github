@@ -10,6 +10,12 @@ import pandas as pd
 import calendar
 from datetime import date
 import math
+import datetime
+
+#time stamp
+ts = time.time()
+st = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+print(st)
 
 #os.getcwd()
 
