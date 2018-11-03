@@ -20,7 +20,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 months = ["january", "february", "march", "april", "may", "june", "all"]
 days = ["monday", "tuesday", "wednesday", "thursday", "friday",
         "saturday", "sunday", "all"]
-cities = ["chicago", "new_york_city", "washington"]
+cities = ["chicago", "new york city", "washington"]
 
 
 def get_filters():
@@ -36,7 +36,7 @@ def get_filters():
         # get user input for city (chicago, new york city, washington). HINT:
         #  Use a while loop to handle invalid inputs
         print("What city are you interested in lerning about? Choose from "
-              "Chicago, New York, or Washington: ")
+              "Chicago, New York City, or Washington: ")
         city = input("City: ").lower()
         i = 0
         while city not in CITY_DATA.keys():
@@ -172,7 +172,7 @@ def load_data(city, month="all", day="all"):
     if day != "all":
         # filter by day of week to create the new dataframe
         df = df[df["day_of_week"] == day.title()]
-    
+
     if city in ["chicago", "new york city"]:
 
         # imputed age for Chicago and New York City
